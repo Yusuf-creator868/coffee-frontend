@@ -1,5 +1,5 @@
 import axios from 'axios'                   
-export const MAIN_URL = process.env.REACT_APP_API_URL;
+export const MAIN_URL = import.meta.env.VITE_API_URL;
 // const LOGIN_URL = `${BASE_URL}token/`
 // const LOGOUT_URL = `${BASE_URL}logout/`
 const REGISTER_URL = `${MAIN_URL}register/`
