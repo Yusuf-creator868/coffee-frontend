@@ -28,7 +28,7 @@ const Coffee = () => {
             })
       }, [activeSlug])
 
-      if (!menus.length) return <p>No Products Yet</p>
+      // if (!menus.length) return <p>No Products Yet</p>
 
      
            

@@ -55,7 +55,7 @@ const OrderMenu = () => {
   }
 
 
-  if (!menus.length) return <p>NO products yet</p>;
+  // if (!menus.length) return <p>NO products yet</p>;
 
   return (
     <div className="grid grid-cols-1 [@media(max-width:955px)]:grid-cols-2 [@media(min-width:955px)_and_(max-width:1155px)]:grid-cols-3 lg:grid-cols-4 gap-2">
