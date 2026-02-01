@@ -5,7 +5,7 @@ import About from './Components/About'
 import Menu from './Components/Menu'
 import Testimonials from './Components/Testimonials'
 import Stickers from './Components/stickers'
-import Footer from './Components/Footer'
+// import Footer from './Components/Footer'
 import { randomValue } from './RandomCode'
 
 
@@ -30,7 +30,7 @@ function App() {
       <Menu/>
       <Stickers/>
       <Testimonials/>
-      <Footer/>
+      {/* <Footer/> */}
 
     </div>
   )
