@@ -38,7 +38,7 @@ const Coffee = () => {
       return(
             <section className="w-full">
                   <div className="grid grid-cols-1 justify-items-center [@media(min-width:673px)_and_(max-width:978px)]:grid-cols-2 [@media(min-width:973px)_and_(max-width:1271px)]:grid-cols-3 lg:grid-cols-4 gap-4 place-items-center">
-                        {menus.map((prev, key) => {
+                        {menus?.map((prev, key) => {
                               return(
                                     <div key={key} className="w-[300px] bg-[#FFF1DD] rounded-2xl p-4 shadow-md">
       
