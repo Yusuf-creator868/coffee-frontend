@@ -69,7 +69,7 @@ const Footer = () => {
                         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                         url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
                       />
-                      {marks.map(marker=> (<Marker position={marker.geocode} icon={custom}>
+                      {marks.map((marker, index)=> (<Marker key={index} position={marker.geocode} icon={custom}>
                           <Popup>
                             {/* {marks.popUp} */}
                             <h1>Hello</h1>
