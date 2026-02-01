@@ -62,7 +62,7 @@ const Footer = () => {
 
 
                         {/* Map */}
-                        {/* <div>
+                        <div>
                         <h1 className="text-2xl font-bold my-5">Map</h1>
                   <MapContainer center={[41.2982, 69.2385 ]} zoom={13}>
                       <TileLayer 
@@ -70,14 +70,14 @@ const Footer = () => {
                         url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
                       />
                       {marks.map((marker, index)=> (<Marker key={index} position={marker.geocode} icon={custom}>
-                          <Popup> */}
-                            {/* {marks.popUp} */}
-                            {/* <h1>Hello</h1>
+                          <Popup>
+                            {marks.popUp}
+                            <h1>Hello</h1>
                           </Popup>
                       </Marker>))}
                   </MapContainer>
 
-                        </div> */}
+                        </div>
                        
                   </div>
                   <div>
