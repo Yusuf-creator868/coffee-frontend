@@ -61,13 +61,13 @@ const Menu = () => {
                         <div className="flex items-center justify-between w-full">
 
                            <div className="hidden md:flex items-center gap-20">
-                              {/* {men.map((prev, key) => {
+                              {men.map((prev, key) => {
                                     return(
                                           <div>
                                                 <Link onClick={() => button(prev.name)} className={`text-2xl ${line(prev.name)}`} key={key} to={prev.slug || "coffee"}>{prev.name}</Link>
                                           </div>
                                     )
-                              })} */}
+                              })}
                            </div>
 
                            <button onClick={() => setisMobile((pre) => !pre)} className="md:hidden p-2 text-foreground z-50">{isMobile ? <X size={24}/> : <IoMenu size={24} />}</button>
