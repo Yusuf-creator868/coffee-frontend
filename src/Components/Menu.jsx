@@ -18,17 +18,19 @@ const Menu = () => {
 
 
 
-      useEffect(()=>{
-            api.get('get_category/', {withCredentials: true})
-            .then(res => {
+      useEffect(() => {
+            api.get('get_category/', { withCredentials: true })
+              .then(res => {
+                console.log("CATEGORY RESPONSE:", res.data)
+          
+                if (Array.isArray(res.data)) {
                   setmen(res.data)
-                  console.log("CATEGORY RESPONSE:", res.data)
-                  
-            })
-            .catch(err => {
-                  console.log(err.message)
-            })
-      }, [])
+                } else {
+                  setmen([]) // fail-safe
+                }
+              })
+              .catch(err => console.log(err))
+          }, [])
 
 
 
@@ -50,7 +52,7 @@ const Menu = () => {
       
 
 
-      return(
+      return( 
             <section id="menu" className="bg-[#D4A276] p-10">
                   <div className="flex flex-col items-start space-y-10 max-w-[1300px]  mx-auto">
                         <div className="space-y-2">
