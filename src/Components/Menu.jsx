@@ -63,8 +63,8 @@ const Menu = () => {
                            <div className="hidden md:flex items-center gap-20">
                               {men.map((prev, key) => {
                                     return(
-                                          <div>
-                                                <Link onClick={() => button(prev.name)} className={`text-2xl ${line(prev.name)}`} key={key} to={prev.slug || "coffee"}>{prev.name}</Link>
+                                          <div key={ key={key}}>
+                                                <Link onClick={() => button(prev.name)} className={`text-2xl ${line(prev.name)}`} to={prev.slug || "coffee"}>{prev.name}</Link>
                                           </div>
                                     )
                               })}
