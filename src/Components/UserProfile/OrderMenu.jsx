@@ -59,7 +59,7 @@ const OrderMenu = () => {
 
   return (
     <div className="grid grid-cols-1 [@media(max-width:955px)]:grid-cols-2 [@media(min-width:955px)_and_(max-width:1155px)]:grid-cols-3 lg:grid-cols-4 gap-2">
-      {/* {menus.map((pre) => (
+      {menus.map((pre) => (
         <div key={pre.id} className="p-2 flex flex-col items-center">
           <div className="p-2 border-2 border-[#BC8A5F] rounded-[10px]">
             <img
@@ -78,7 +78,7 @@ const OrderMenu = () => {
             </button>
           </div>
         </div>
-      ))} */}
+      ))}
     </div>
   );
 };

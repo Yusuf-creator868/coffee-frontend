@@ -35,11 +35,11 @@ const Navbar = () => {
             <nav className="flex items-center justify-between px-25 py-2 bg-[#BC8A5F] z-10 fixed w-full">
                   <img className="w-[110px] " src={logo} alt="LOGO" />
                   <div className="hidden md:flex items-center gap-10">
-                        {/* {nav.map((prev, key) => {
+                        {nav.map((prev, key) => {
                               return(
                                     <a className="text-[#F3D5B5]" key={key} href={prev.href}>{prev.name}</a>
                               )
-                        })} */}
+                        })}
                   </div>
                   {
                         Auth ? 
@@ -57,9 +57,9 @@ const Navbar = () => {
                   <div className={`fixed inset-0 bg-background/95 backdrop-blur-md z-40 flex flex-col items-center justify-center transition-all duration-300 md:hidden ${isMobile ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}>
 
                               <div className="flex flex-col space-y-8 text-xl">
-                                    {/* {nav.map((item, key) => (
+                                    {nav.map((item, key) => (
                                           <a key={key} href={item.href} className="text-foreground/80 hover:text-primary" onClick={() => setisMobile(false)}>{item.name}</a>
-                                    ))} */}
+                                    ))}
                               </div>
 
                   </div>
