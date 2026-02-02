@@ -22,6 +22,7 @@ const Menu = () => {
             api.get('get_category/', {withCredentials: true})
             .then(res => {
                   setmen(res.data)
+                  console.log("CATEGORY RESPONSE:", res.data)
                   
             })
             .catch(err => {
