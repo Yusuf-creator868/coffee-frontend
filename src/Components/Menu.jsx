@@ -61,13 +61,13 @@ const Menu = () => {
                         <div className="flex items-center justify-between w-full">
 
                            <div className="hidden md:flex items-center gap-20">
-                              {men.map((prev, key) => {
+                              {/* {men.map((prev, key) => {
                                     return(
                                           <div>
                                                 <Link onClick={() => button(prev.name)} className={`text-2xl ${line(prev.name)}`} key={key} to={prev.slug || "coffee"}>{prev.name}</Link>
                                           </div>
                                     )
-                              })}
+                              })} */}
                            </div>
 
                            <button onClick={() => setisMobile((pre) => !pre)} className="md:hidden p-2 text-foreground z-50">{isMobile ? <X size={24}/> : <IoMenu size={24} />}</button>
@@ -77,9 +77,9 @@ const Menu = () => {
                               ${isMobile ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`
                               }>
                               <div className="flex flex-col space-y-8 text-xl">
-                                    {men.map((item, key) => (
+                                    {/* {men.map((item, key) => (
                                           <Link key={key} to={item.slug} className="text-foreground/80 hover:text-primary" onClick={() => setisMobile(false)}>{item.name}</Link>
-                                    ))}
+                                    ))} */}
                               </div>
                         </div>
 

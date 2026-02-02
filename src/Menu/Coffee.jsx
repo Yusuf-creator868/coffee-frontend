@@ -38,28 +38,28 @@ const Coffee = () => {
       return(
             <section className="w-full">
                   <div className="grid grid-cols-1 justify-items-center [@media(min-width:673px)_and_(max-width:978px)]:grid-cols-2 [@media(min-width:973px)_and_(max-width:1271px)]:grid-cols-3 lg:grid-cols-4 gap-4 place-items-center">
-                        {menus?.map((prev, key) => {
+                        {/* {menus?.map((prev, key) => {
                               return(
-                                    <div key={key} className="w-[300px] bg-[#FFF1DD] rounded-2xl p-4 shadow-md">
+                                    <div key={key} className="w-[300px] bg-[#FFF1DD] rounded-2xl p-4 shadow-md"> */}
       
                                     {/* Image wrapper */}
-                                    <div className="relative bg-[#F3D6B8] rounded-xl p-3">
+                                    {/* <div className="relative bg-[#F3D6B8] rounded-xl p-3"> */}
                                       
                                       {/* Badge */}
-                                      <span className="absolute top-0 left-0 bg-[#C99763] text-black text-sm font-semibold px-4 py-1 rounded-[5px]">
+                                      {/* <span className="absolute top-0 left-0 bg-[#C99763] text-black text-sm font-semibold px-4 py-1 rounded-[5px]">
                                         Order
-                                      </span>
+                                      </span> */}
                               
                                       {/* Image */}
-                                      <img
+                                      {/* <img
                                         src={`${MAIN_URL}${prev.image}`}
                                         alt="Dalgona Coffee"
                                         className="w-full h-[260px] object-cover rounded-xl"
                                       />
-                                    </div>
+                                    </div> */}
                               
                                     {/* Content */}
-                                    <div className="mt-4 space-y-3">
+                                    {/* <div className="mt-4 space-y-3">
                                       <h2 className="text-2xl font-bold text-black">
                                         {prev.name}
                                       </h2>
@@ -75,7 +75,7 @@ const Coffee = () => {
                               
                                   </div>
                               )
-                        })}
+                        })} */}
                         
 
                   </div>
