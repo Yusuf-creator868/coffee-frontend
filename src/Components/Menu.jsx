@@ -19,7 +19,7 @@ const Menu = () => {
 
 
       useEffect(() => {
-            api.get('get_category/', { withCredentials: true })
+            api.get('get_category/')
               .then(res => {
                 console.log("CATEGORY RESPONSE:", res.data)
           
