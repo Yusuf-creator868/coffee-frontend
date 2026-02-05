@@ -80,16 +80,17 @@ const AdminPage = () => {
 
       const handleChange = (e) => {
             const { name, value, files } = e.target;
-            setForm({
-                  ...form,
-                  [e.target.name]: e.target.value
-            })
           
-            // if it's a file input
             if (files) {
-              setForm({ ...form, image: files[0] });
+              setForm(prev => ({
+                ...prev,
+                image: files[0]
+              }));
             } else {
-              setForm({ ...form, [name]: value });
+              setForm(prev => ({
+                ...prev,
+                [name]: value
+              }));
             }
           };
 
