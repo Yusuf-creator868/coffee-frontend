@@ -73,7 +73,7 @@ const AdminPage = () => {
                   console.log(form)
             })
             .catch(err => {
-                  alert("Please fill all fields!")
+                  alert(err,message)
             })
       }
 
