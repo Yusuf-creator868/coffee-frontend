@@ -73,7 +73,7 @@ const AdminPage = () => {
                   console.log(form)
             })
             .catch(err => {
-                  alert(err,message)
+                  alert(err.message)
             })
       }
 
